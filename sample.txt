@@ -1,2 +1,4 @@
 git use this command
 git status
+git add
+
