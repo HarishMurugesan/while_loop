@@ -2,3 +2,279 @@ git use this command
 git status
 git add
 
+
+
+
+
+harishm@harishm-Lenovo-E41-25:~/Music/Git$ git clone https://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@github.com/HarishMurugesan/while_loop.git
+Cloning into 'while_loop'...
+warning: You appear to have cloned an empty repository.
+harishm@harishm-Lenovo-E41-25:~/Music/Git$ cd while_loop/
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ ls
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ touch sample.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ ls
+sample.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ touch.sample2.txt
+touch.sample2.txt: command not found
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ touch sample2.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ ls
+sample2.txt  sample.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample.txt
+	sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git add .
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample.txt
+	new file:   sample2.txt
+
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git reset
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample.txt
+	sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git add sample.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample2.txt
+
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git add .
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample.txt
+	new file:   sample2.txt
+
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git rm --cached sample.txt
+rm 'sample.txt'
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git reset
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample.txt
+	sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git add sample.txt sample2.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample.txt
+	new file:   sample2.txt
+
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git commit -m "commited by hk"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'harishm@harishm-Lenovo-E41-25.(none)')
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.email"kalyanharish522@gmail.com"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$  git config --global user.name "kalyanharish522"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git commit -m "commited by hk"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'harishm@harishm-Lenovo-E41-25.(none)')
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.email"kalyanharish522@gmail.com"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.name"kalyanharish522"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git commit -m "commited by hk"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'harishm@harishm-Lenovo-E41-25.(none)')
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.email"kalyanharish522@gmail.com"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.name"kalyanharish522"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git commit -m "commited by hk"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'harishm@harishm-Lenovo-E41-25.(none)')
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.email "kalyanharish522@gmail.com"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git config --global user.name "kalyanharish522"
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git commit -m "commited by hk"
+[main (root-commit) fcb893e] commited by hk
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample.txt
+ create mode 100644 sample2.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HarishMurugesan/while_loop.git
+ * [new branch]      main -> main
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 696 bytes | 348.00 KiB/s, done.
+From https://github.com/HarishMurugesan/while_loop
+   fcb893e..4057ce5  main       -> origin/main
+Updating fcb893e..4057ce5
+Fast-forward
+ sample.txt | 1 +
+ 1 file changed, 1 insertion(+)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 691 bytes | 345.00 KiB/s, done.
+From https://github.com/HarishMurugesan/while_loop
+   4057ce5..a135633  main       -> origin/main
+Updating 4057ce5..a135633
+error: Your local changes to the following files would be overwritten by merge:
+	sample.txt
+Please commit your changes or stash them before you merge.
+Aborting
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git stash
+Saved working directory and index state WIP on main: 4057ce5 Update sample.txt
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git pull
+Updating 4057ce5..a135633
+Fast-forward
+ sample.txt | 1 +
+ 1 file changed, 1 insertion(+)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git stash pop
+Auto-merging sample.txt
+CONFLICT (content): Merge conflict in sample.txt
+The stash entry is kept in case you need it again.
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both modified:   sample.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git add .
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   sample.txt
+
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git commit -m "commited"
+[main 8ab6cce] commited
+ 1 file changed, 2 insertions(+)
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HarishMurugesan/while_loop.git
+   a135633..8ab6cce  main -> main
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ ^C
+harishm@harishm-Lenovo-E41-25:~/Music/Git/while_loop$ 
+
+
